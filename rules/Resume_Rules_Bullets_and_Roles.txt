@@ -1,0 +1,97 @@
+=== Resume_Rules_Bullets_and_Roles.txt ===
+INSTRUCTIONS ONLY - do not use this file as a content source.
+The examples below describe a fictional person.
+
+This file governs bullet points and role description paragraphs.
+Read before writing any experience content. Follow precisely.
+
+------------------------------
+ROLE DESCRIPTION PARAGRAPH RULES
+------------------------------
+- Every role must have a description paragraph above the bullets.
+- Hard limit: 2-3 sentences. Never more than 3.
+- Must NOT restate or preview what the bullets say. The bullets
+  prove the work - the description sets the stage.
+- Must answer these three questions:
+    1. What was the situation when this person arrived?
+    2. What was their mandate and scope of accountability?
+    3. What changed, or what did their presence make possible?
+- Never lead with headcount or team size as the opening
+  statement. Numbers may appear in the description but must
+  not be the first thing a reader sees.
+- Numbers and headcount belong in bullets, not role descriptions,
+  unless they are essential to conveying the scope of the mandate.
+
+CORRECT example:
+"Joined the regional depot after two years of missed delivery
+windows and a paper-based dispatch process. Appointed with a
+mandate to stabilise daily operations, replace the scheduling
+process, and give the customer team reliable delivery times."
+
+INCORRECT example (never do this):
+"Leads a team of 22 staff including drivers, pickers and shift
+supervisors across dispatch, inventory and returns, with
+accountability for performance management, rostering and
+staff development."
+- This restates the bullets and leads with headcount.
+  It adds no context and signals nothing about why the role
+  mattered.
+
+------------------------------
+BULLET POINT RULES
+------------------------------
+- Every bullet must be 2 lines maximum when rendered in the
+  Word file. This is a hard limit. No exceptions.
+- Write each bullet to fit within 2 lines before generating
+  the draft - do not write long and trim later.
+- Prefer one strong outcome statement over a list of activities.
+- If a bullet lists more than 3 items, it is a candidate for
+  tightening or splitting.
+
+SPLITTING PROTOCOL
+If a bullet cannot be tightened to 2 lines without losing
+essential meaning, split it into two bullets:
+  Bullet 1 - what was done and the primary outcome
+  Bullet 2 - how it was implemented or what it resulted in
+
+The two bullets must each read as a complete, standalone
+statement. They must not read as one sentence broken in half.
+
+CORRECT split example:
+Bullet 1: "Led the move of daily dispatch from paper run
+sheets to a shared scheduling board, ending double-booked
+delivery slots."
+Bullet 2: "Trained three shift supervisors to own the board,
+so scheduling no longer depended on one person being on site."
+
+INCORRECT split example (never do this):
+Bullet 1: "Led the move of daily dispatch from paper run
+sheets to a shared scheduling board, working with"
+Bullet 2: "three shift supervisors to end double-booked
+delivery slots."
+- This is one sentence broken mid-thought. Each bullet must
+  stand alone.
+
+LANGUAGE RULES
+- Lead with a strong action verb. Never start with "Responsible
+  for", "Helped", "Assisted", or "Supported".
+- Quantify only where a metric exists in the source files or
+  is explicitly confirmed. Never invent numbers.
+- Avoid padded phrasing: "in order to", "responsible for
+  ensuring", "as well as", "a wide range of", "across a
+  variety of". Replace with tighter equivalents.
+- Write for outcome, not activity. "Cut order-to-dispatch time
+  from two days to same-day" is stronger than "Managed the
+  dispatch process."
+
+------------------------------
+PAGE LIMIT RULE
+------------------------------
+- The resume must not exceed the page target in config.json.
+  Education included. No exceptions without the candidate's
+  explicit approval.
+- Older roles (10+ years) should generally be condensed to
+  2-3 bullets each.
+- Exception: if an older role directly and substantially
+  matches a must-have in the target posting, keep fuller
+  coverage and note this explicitly.

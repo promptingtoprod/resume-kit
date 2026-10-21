@@ -1,0 +1,13 @@
+FICTIONAL DOCUMENT (text copy of a certificate)
+Made up for the resume-kit example. Not issued by the Project Management Institute. Not a real credential.
+
+Project Management Institute
+Project Management Professional (PMP)
+
+This certifies that Bob has met the requirements and is
+credentialed as a Project Management Professional.
+
+Original certification date: 14 August 2020
+Renewed: 11 July 2023
+Valid through: 13 August 2026
+PMP number: 00000000 (placeholder, not a real number)

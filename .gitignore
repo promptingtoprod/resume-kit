@@ -1,0 +1,18 @@
+# This folder holds personal data. Do not push it to a public repository.
+# Everything personal is ignored; only the empty templates are kept.
+node_modules/
+
+sources/*
+!sources/README.md
+
+jobs/*
+!jobs/_TEMPLATE/
+
+# A resume dropped in the top folder before setup moves it into sources/
+/*.docx
+/*.doc
+/*.pdf
+/*.rtf
+/*.odt
+/*resume*
+/*Resume*

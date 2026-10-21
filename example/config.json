@@ -1,0 +1,12 @@
+{
+  "paper": "Letter",
+  "font": "Calibri",
+  "fontSizePt": 11,
+  "accentColor": "1F3864",
+  "pageTarget": 2,
+  "maxBulletChars": 230,
+  "hardFail": ["—"],
+  "warnPhrases": ["Oversaw", "Spearheaded", "Orchestrated", "Leveraged", "Championed"],
+  "weakOpeners": ["Responsible for", "Helped", "Assisted", "Supported"],
+  "warnYearCountInSummary": true
+}

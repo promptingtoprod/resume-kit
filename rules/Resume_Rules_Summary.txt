@@ -1,0 +1,48 @@
+=== Resume_Rules_Summary.txt ===
+INSTRUCTIONS ONLY - do not use this file as a content source.
+The examples below describe a fictional person.
+
+This file governs the summary paragraph only.
+Read before writing the summary. Follow precisely.
+
+------------------------------
+SUMMARY RULES
+------------------------------
+- 2-3 sentences maximum.
+- Must position who this person is and what they are known for
+  at a career level - the signal a recruiter needs in 6 seconds
+  to decide whether to keep reading.
+- Must NOT include: team size, headcount, or direct report
+  counts. Scope is conveyed through language only.
+- Must NOT count years ("12 years of experience"). The dates on
+  the page carry tenure.
+- Must NOT restate the competencies or preview the bullets.
+  A recruiter who reads only the summary should understand the
+  candidate's identity and level - not get a list of their
+  activities.
+- Must NOT read as a keyword dump. If removing a word does not
+  change the meaning, remove it.
+- Should reference the candidate's most distinctive credential
+  or differentiator where natural - an award, a publication, a
+  business they built, a licence that is hard to get.
+- Must align to the tone dial answer for this role:
+    (A) Hands-on: lead with domain expertise and delivery scope
+    (B) Leadership: lead with direction-setting and
+        organisational impact
+    (C) Blend: open with leadership identity, close with the
+        hands-on domains that give it credibility
+
+CORRECT example (blend framing):
+"Operations leader known for rebuilding warehouse and delivery
+processes in regional distribution, with work spanning food
+logistics and healthcare supply. Recognised for turning
+service complaints into measurable process changes and for
+bringing new sites online without interrupting daily orders."
+
+INCORRECT example (never do this):
+"Experienced operations manager leading a team of 22 staff
+with skills in logistics, scheduling, vendor management,
+inventory, budgeting, and stakeholder communication across
+multiple industries."
+- Leads with headcount, reads as a keyword list, no
+  differentiator, no career-level signal.

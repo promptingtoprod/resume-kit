@@ -1,0 +1,113 @@
+{
+  "_comment": "FICTIONAL EXAMPLE. Bob, every employer, every date and every number here are invented. Company G, Senior Project Manager, Platform Delivery. Every string traces to sources/master_resume.md, sources/bullet_bank.md, or a fact confirmed in chat on 2026-10-13 and recorded in the bullet bank. Tone dial: C. Compressed for two pages on 2026-10-13; removed content is listed in gap_report.md under Page Compression Log. Review fixes approved and applied 2026-10-13 (see gap_report.md, Review Round).",
+  "name": "Bob",
+  "email": "bob@example.com",
+  "summaryHeading": "Professional Summary",
+  "summary": "Senior Project Manager delivering integration-heavy rollouts for logistics and health customers, known for taking red projects back to green without losing the customer. Seven years as a developer and tech lead before moving into project management, so designs and estimates get challenged. PMP, current.",
+  "competencies": [
+    {
+      "name": "Customer Rollouts",
+      "keywords": "Concurrent projects, go-live planning, cutover, hypercare, site readiness"
+    },
+    {
+      "name": "Project Recovery",
+      "keywords": "Red-to-green turnaround, root causes, re-baselining, go/no-go gates"
+    },
+    {
+      "name": "Budgets & Governance",
+      "keywords": "Budget tracking, monthly forecasting, variance reporting, change control"
+    },
+    {
+      "name": "Vendor & Contract Management",
+      "keywords": "RFP, SOW and rate negotiation, annual renewals, quarterly scorecards"
+    },
+    {
+      "name": "Delivery Methods",
+      "keywords": "Hybrid agile, two-week sprints inside quarterly gates, Scrum, Jira"
+    },
+    {
+      "name": "Engineering",
+      "keywords": "Java, Spring, REST and HL7 v2 integration, PostgreSQL, AWS"
+    },
+    {
+      "name": "Steering & Coaching",
+      "keywords": "CIO steering committees, CEO/CFO delivery reviews, mentoring PMs"
+    },
+    {
+      "name": "Working Style",
+      "keywords": "Weekly go/no-go with the customer's operations manager instead of status calls; costed options to the steering committee when dates move."
+    }
+  ],
+  "experience": [
+    {
+      "employer": "Company N",
+      "dates": "Nov 2021 - Present",
+      "title": "Senior Project Manager",
+      "description": "Warehouse and freight-forwarding software for logistics firms. Accountable to the Head of Delivery for three concurrent customer projects, and moved the delivery team from waterfall stage gates to two-week sprints inside quarterly gates.",
+      "pageBreakBefore": false,
+      "bullets": [
+        "Took over the customs filing module in Dec 2023, red and four months behind; phase one went live at all three customer sites on 18 Mar 2024 and the first live filing cleared that day.",
+        "On the customs module, moved two document types added with no change request into a signed phase-two change, fixed test data at 40 sample shipments and made the status call a weekly go/no-go.",
+        "Track and forecast budgets totalling $1.8M a year across the three projects; report variance and present all three at the monthly delivery review to the CEO, CFO and Head of Delivery.",
+        "Negotiate statements of work and rates with two offshore development vendors, including both annual renewals in 2024 and 2025, and approve vendor invoices before the PMO pays them.",
+        "Wrote the vendor scorecard (delivery against plan, defect escape rate, responsiveness) and use it in a quarterly performance review with each vendor.",
+        "Ran the RFP for the carrier API integration vendor: four bids scored with the head of engineering and the customer's IT lead; contract signed May 2023, first carrier live Sep 2023.",
+        "Paused the warehouse scanning rollout for two weeks after a bad first week on unsurveyed yard Wi-Fi, and added a site readiness checklist; all four warehouses live by Sep 2025.",
+        "Built the weekly status pack the PMO now uses for every project, from Jira exports via a Python tool published on GitHub; it replaced three formats.",
+        "Mentor two junior project managers."
+      ]
+    },
+    {
+      "employer": "Company A",
+      "dates": "Jul 2018 - Oct 2021",
+      "title": "Project Manager",
+      "description": "Clinic scheduling and patient-records software for hospital groups. Moved from tech lead into project management to run the 14-month, $1.2M patient-records migration for a three-hospital group.",
+      "pageBreakBefore": false,
+      "bullets": [
+        "Found in dry run two that roughly 9 percent of about 410,000 records had conflicting identifiers; went live six weeks after the original date, on the re-baselined date agreed with the customer.",
+        "Ran the monthly steering committee with the hospital group's CIO and operations director; brought three costed options for the data-quality problem and got the new date agreed in writing.",
+        "Managed the data migration contractor whose first dry run took 31 hours against a 12-hour cutover window; their rewrite into parallel batches by hospital got dry run three under 9 hours.",
+        "Negotiated the HL7 interface supplier's shared specialist up from one to two days a week for the eight weeks before cutover, in return for our developers doing their own interface testing.",
+        "Ran the cutover command centre over the go-live weekend; when one hospital's ADT feed failed to reconnect, the supplier fixed it in about two hours and go-live went ahead on time on Monday.",
+        "Ran three months of hypercare, then the group's hosted upgrades (two major releases a year), an e-referrals interface and the move of its reporting database to the hosted environment."
+      ]
+    },
+    {
+      "employer": "Company A",
+      "dates": "Jan 2017 - Jun 2018",
+      "title": "Tech Lead",
+      "description": "Promoted from senior developer to lead the clinic scheduling team (Java, Angular, PostgreSQL) after the previous tech lead left.",
+      "pageBreakBefore": false,
+      "bullets": [
+        "Led four developers and took releases from monthly to fortnightly in April 2017 by replacing the monthly release board with a checklist the team signed off; the cadence held.",
+        "Led the move of three hospital customers from on-premise to AWS; the first took eleven weeks against a six-week plan, so wrote a runbook and the next two took five and four weeks."
+      ]
+    },
+    {
+      "employer": "Company A",
+      "dates": "Sep 2014 - Dec 2016",
+      "title": "Senior Software Developer",
+      "description": "Joined when each hospital integration was hand-coded and took a developer about six weeks. Built the HL7 v2 ADT interface adapter, driven by a per-hospital configuration file, that cut a typical integration to about two weeks and served 11 hospital integrations.",
+      "pageBreakBefore": false,
+      "bullets": []
+    },
+    {
+      "employer": "Company F",
+      "dates": "Jun 2011 - Aug 2014",
+      "title": "Software Developer",
+      "description": "Card payment processor for small merchants. Developer on the Java/Spring settlement services, on call one week in four; rewrote the nightly reconciliation batch from an in-memory Java job to set-based SQL in PostgreSQL, cutting run time from about four hours to about 45 minutes.",
+      "pageBreakBefore": false,
+      "bullets": []
+    }
+  ],
+  "education": [
+    {
+      "title": "BSc Computer Science",
+      "institution": "Westerby Institute of Technology, 2011"
+    }
+  ],
+  "credentialLines": [
+    "Project Management Professional (PMP) - PMI - 2020, renewed 2023 and 2026 | Professional Scrum Master I (PSM I) - Scrum.org - 2019 | SAFe for Teams course (two days), 2024",
+    "Volunteer coding club mentor for teenagers, 2019 - present; wrote its twelve-week beginner Python curriculum in 2023."
+  ]
+}

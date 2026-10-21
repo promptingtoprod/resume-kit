@@ -1,0 +1,44 @@
+{
+  "_comment": "One per application. Every string here must trace to sources/ or to a fact the candidate confirmed in chat. Never invent. The build refuses to run while any REPLACE or NEED CONFIRMATION text remains.",
+
+  "name": "REPLACE - full name, plus post-nominals only if standing rules say so",
+  "email": "REPLACE",
+  "phone": "REPLACE",
+  "location": "REPLACE - city and region only, or delete this line",
+  "links": [
+    { "text": "REPLACE - e.g. LinkedIn, or delete the links block", "url": "https://" }
+  ],
+
+  "summaryHeading": "Professional Summary",
+  "summary": "REPLACE. Follow rules/Resume_Rules_Summary.txt. 2-3 sentences. No headcount. No year counts.",
+
+  "competencies": [
+    { "name": "REPLACE", "keywords": "noun phrase, noun phrase, noun phrase, max 20 words, no verbs" }
+  ],
+
+  "experience": [
+    {
+      "employer": "REPLACE - exactly as in sources/master_resume.md",
+      "dates": "REPLACE - exactly as in sources/master_resume.md",
+      "title": "REPLACE - exactly as in sources/master_resume.md",
+      "description": "REPLACE. Max 3 sentences. Situation, mandate, what changed. Never restates the bullets.",
+      "pageBreakBefore": false,
+      "bullets": [
+        "REPLACE. Plain string bullet. Max 2 rendered lines.",
+        [
+          { "text": "REPLACE. A bullet with an inline link: " },
+          { "text": "link text", "url": "https://" },
+          { "text": " and the rest of the sentence." }
+        ]
+      ]
+    }
+  ],
+
+  "education": [
+    { "title": "REPLACE - credential", "institution": "REPLACE - institution, city" }
+  ],
+
+  "credentialLines": [
+    "REPLACE - e.g. Certifications: A | B | C   (or delete)"
+  ]
+}

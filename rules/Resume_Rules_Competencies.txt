@@ -1,0 +1,124 @@
+=== Resume_Rules_Competencies.txt ===
+INSTRUCTIONS ONLY - do not use this file as a content source.
+The examples below describe a fictional person.
+
+This file governs the construction of the Core Competencies
+section. Run all four stages in sequence automatically without
+asking for further input. Do not skip any stage.
+
+------------------------------
+FORMAT RULES (apply throughout all stages)
+------------------------------
+- Each competency: bold title + colon + keyword-list description
+- Keyword-list means: short noun phrases and specific terms
+  separated by commas. No full sentences. No verbs. No prose.
+- 20 words maximum per description.
+- 8-10 competencies maximum total. Fewer is fine.
+- The entire block must not exceed half a page when rendered.
+
+GOLD STANDARD REFERENCE - match this style:
+
+"Warehouse & Delivery Operations: Same-day dispatch, route
+planning, cold-chain handling, returns processing, stock
+accuracy, cycle counts, carrier scheduling."
+
+"Process Improvement & Planning: Process mapping, service-level
+targets, root-cause reviews, seasonal capacity planning,
+standard work instructions, shift handover design."
+
+"Suppliers, Budgets & Contracts: Carrier contract negotiation,
+operating budget ownership, purchase approvals, supplier
+scorecards, tender evaluation."
+
+"Communication & Leadership Style: Explains operational
+trade-offs plainly to customer, finance and floor teams;
+coaches supervisors to make decisions without escalation."
+
+Note: the last competency above uses a sentence format - this
+is acceptable only for a communication/style competency where
+noun phrases alone cannot convey the nuance. All other
+competencies must use keyword-list format.
+
+------------------------------
+STAGE 1 - DOMAIN EXTRACTION
+------------------------------
+Scan the full experience section of the tailored resume draft.
+Identify every domain, skill, and capability that is already
+demonstrated by at least one bullet point or role description.
+Build an internal candidate list - these are the only domains
+eligible to appear in Core Competencies.
+
+Rule: if a domain has no supporting evidence in the experience
+section, it cannot appear in Core Competencies. Do not add
+aspirational or inferred competencies.
+
+------------------------------
+STAGE 2 - TONE DIAL APPLICATION
+------------------------------
+Apply the tone dial answer from the Tailor workflow:
+
+(A) Hands-on depth first:
+    Weight toward practical domains - specific methods, tools,
+    systems, standards. Include at least one communication
+    competency but place it last.
+
+(B) Leadership and outcomes first:
+    Weight toward leadership, planning, budgets, stakeholder
+    management, team development. Hands-on competencies are
+    included but grouped or condensed. The communication
+    competency is prominent.
+
+(C) Blend:
+    Balance the two. Neither dominates. Order: lead with the
+    domain most emphasised in the posting, then alternate
+    between hands-on and leadership themes.
+
+Regardless of dial setting, always include at least one
+competency that covers communication, working style, or how
+this person leads. The competencies section must not read as a
+pure keyword list.
+
+------------------------------
+STAGE 3 - DE-DUPLICATION
+------------------------------
+Compare the candidate competency list against the experience
+bullets. For any term that is already prominently and
+specifically covered in a bullet point:
+
+- If the term is a must-have keyword for the posting: keep it
+  in the competency description - it needs to appear early,
+  not only in the bullets.
+- If the term is a nice-to-have or supporting detail already
+  well covered in bullets: either omit it from the competency
+  description or compress it to a single short phrase.
+
+Goal: the competencies section should complement the experience
+section, not repeat it. A recruiter reading both should learn
+something new from each.
+
+------------------------------
+STAGE 4 - 7-SECOND TEST
+------------------------------
+Read the completed competencies block as a recruiter scanning
+for 7 seconds. Ask:
+
+1. Does the level signal land immediately - does this read as
+   the level the posting is hiring for?
+2. Are the top 3-4 competencies the ones most critical to the
+   target posting - or did lower-priority items drift to the
+   top?
+3. Does it read as a natural, scannable inventory - or does it
+   feel like a keyword dump?
+4. Is there at least one competency that signals how this
+   person works with, leads, or develops others?
+5. Would a recruiter who reads only the competencies block have
+   enough signal to consider shortlisting - even before reading
+   the experience section?
+
+If any check fails, revise the affected competency before
+finalising. Do not proceed to validation with a failing
+competency block.
+
+After Stage 4 passes, present the completed Core Competencies
+section and note which stage findings, if any, required
+revision.

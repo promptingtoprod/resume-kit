@@ -1,0 +1,8 @@
+SETUP IS NOW A COMMAND.
+
+Start Claude Code inside this folder (type: claude) and then type:
+
+/setup
+
+It runs the setup interview: privacy first, then your old resume, what the
+resume leaves out, optional proof for each fact, and your standing rules.

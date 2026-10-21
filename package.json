@@ -1,0 +1,16 @@
+{
+  "name": "resume-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local resume tailoring system for Claude Code",
+  "scripts": {
+    "new-job": "node scripts/new-job.js",
+    "build": "node scripts/build_resume.js",
+    "preview": "node scripts/build_resume_html.js",
+    "validate": "node scripts/validate.js"
+  },
+  "dependencies": {
+    "docx": "^9.0.0"
+  },
+  "license": "MIT"
+}

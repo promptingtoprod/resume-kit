@@ -1,0 +1,141 @@
+=== Resume_Rules_Build.txt ===
+INSTRUCTIONS ONLY - do not use this file as a content source.
+
+This file governs the Word file generation. Read before writing
+any code. The spec is already encoded in scripts/build_resume.js.
+Values marked [config] come from config.json and are the only
+ones a candidate should change.
+
+------------------------------
+PAGE SETUP
+------------------------------
+- Paper: [config] "Letter" (12240 x 15840 DXA) or "A4"
+  (11906 x 16838 DXA). Always set explicitly.
+- Margins: top/bottom 864 DXA (0.6"), left/right 1008 DXA (0.7")
+- Base font: [config] font and size, colour #000000
+
+------------------------------
+NAME (document top)
+------------------------------
+- Bold, 4pt larger than the base size, #000000, centred
+- Spacing: 0 before, 40 DXA after
+
+------------------------------
+CONTACT LINE
+------------------------------
+- Centred, base size
+- Format: email (hyperlink, #1155CC, underlined) | phone |
+  optional city | optional links
+- Spacing: 0 before, 160 DXA after
+- Never a full street address, date of birth, or photo unless
+  the candidate asks for it because their country expects it.
+
+------------------------------
+SECTION HEADERS
+------------------------------
+(PROFESSIONAL SUMMARY, CORE COMPETENCIES, PROFESSIONAL
+EXPERIENCE, EDUCATION AND CREDENTIALS)
+- Bold, ALL CAPS, [config] accent colour (default #1F3864)
+- Spacing: 200 DXA before, 80 DXA after
+- Bottom border: single, 6pt, accent colour, 1pt space
+  (paragraph border - not a table or horizontal rule)
+
+------------------------------
+SUMMARY PARAGRAPH
+------------------------------
+- Base size, #000000, left-aligned
+- Spacing: 0 before, 160 DXA after
+
+------------------------------
+EMPLOYER / DATE LINE
+------------------------------
+- Bold, base size, #000000
+- Employer left-aligned; date right-aligned via a RIGHT TAB
+  STOP at the text width (page width minus both margins)
+- Spacing: 200 DXA before, 40 DXA after
+
+------------------------------
+JOB TITLE
+------------------------------
+- Base size, accent colour, NOT bold, NOT italic
+- Spacing: 0 before, 120 DXA after
+
+------------------------------
+ROLE DESCRIPTION PARAGRAPH
+------------------------------
+- Base size, #000000, left indent 360 DXA (0.25")
+- Spacing: 40 DXA before, 80 DXA after
+- Maximum 3 sentences. Sets context, mandate, and impact.
+  Never restates the bullets.
+
+------------------------------
+"Key Contributions:" LABEL
+------------------------------
+- Base size, #000000, left indent 360 DXA, NOT bold
+- Spacing: 120 DXA before, 120 DXA after
+
+------------------------------
+ACHIEVEMENT BULLETS
+------------------------------
+- Bullet character via numbering config - NEVER typed into the
+  text
+- Left: 720 DXA, Hanging: 360 DXA
+- Spacing: 40 DXA before, 80 DXA after
+- Maximum 2 lines per bullet when rendered. No exceptions.
+
+------------------------------
+CORE COMPETENCIES BULLETS
+------------------------------
+- Second numbering reference, same indent and spacing
+- Bold run for competency name + colon, then normal run for
+  the keyword-list description
+
+------------------------------
+EDUCATION ENTRIES
+------------------------------
+- Credential: bold, spacing 40 before / 0 after
+- Institution: normal, spacing 0 before / 40 after
+- No bullets - plain paragraphs, two lines per credential
+
+------------------------------
+HYPERLINKS
+------------------------------
+- Colour #0563C1, underlined
+
+------------------------------
+WHY THE LAYOUT IS THIS PLAIN
+------------------------------
+One column, real text, standard headings, no tables, no text
+boxes, no icons, no photo. Software that reads resumes handles
+this reliably, and so does a tired person.
+
+------------------------------
+COMPRESSION MODE (--compress)
+------------------------------
+- Role description "before": 20 DXA (standard: 40)
+- Bullet "before": 20 DXA (standard: 40)
+- Bullet "after": 60 DXA (standard: 80)
+- "Key Contributions:" before/after: 80 DXA (standard: 120)
+- Job title "after": 80 DXA (standard: 120)
+Never compress: section headers, employer lines, name,
+contact line, or font size.
+
+------------------------------
+BUILD GUARDS (scripts/checks.js)
+------------------------------
+The build REFUSES to produce a file when the content contains:
+- "NEED CONFIRMATION" anywhere (an unconfirmed fact)
+- leftover template text ("REPLACE", "TODO")
+- any character or phrase listed under hardFail in config.json
+  (the em-dash is there by default: it is a common sign of
+  machine-written text, and a hyphen does the same job)
+Fix the content. Never edit the guard to get a build through.
+
+------------------------------
+PAGE BREAKS AND ORPHAN CONTROL
+------------------------------
+- keepNext + keepLines on ALL section headers
+- keepNext on ALL employer lines, job title lines, and
+  credential title lines
+- If a section still orphans, set "pageBreakBefore": true on
+  that role in content.json - the guaranteed fallback

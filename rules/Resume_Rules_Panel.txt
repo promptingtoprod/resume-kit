@@ -1,0 +1,217 @@
+=== Resume_Rules_Panel.txt ===
+INSTRUCTIONS ONLY - do not use this file as a content source.
+
+This file governs the full Panel trigger workflow including
+panel selection, expert reviews, triage table, and the fix
+loop. Follow precisely.
+
+Say once, before the reviews: these are simulated reviewers.
+They are useful for finding weak spots. They are not real
+people and their verdicts are not a prediction.
+
+------------------------------
+PANEL SELECTION PROTOCOL
+------------------------------
+Once the target role and posting are known, run these steps:
+
+STEP 1 - Evaluate each of the 4 core experts against the role.
+For each expert you are dropping, state:
+  "Dropping [Expert Name] because [specific reason tied to
+  this role]."
+For each expert you are keeping, state:
+  "Including [Expert Name] because [specific reason tied to
+  this role]."
+
+STEP 2 - Suggest job-specific experts the core panel would
+miss. For each suggestion include:
+  - Expert title and persona
+  - What they would catch that the core panel would not
+  - Why it matters for this specific role
+
+STEP 3 - Present the full recommended panel as a numbered
+list and ask: "Shall I proceed with this panel or would you
+like to make changes?"
+Wait for confirmation before running any reviews.
+
+------------------------------
+PANEL OUTPUT FORMAT
+------------------------------
+Output in this order every time:
+
+1. TRIAGE TABLE (first, before any expert sections)
+2. INDIVIDUAL EXPERT REVIEWS
+3. FIX LOOP
+
+------------------------------
+1. TRIAGE TABLE
+------------------------------
+Format:
+
+| Gap | Experts flagging it | Fixable from source files? |
+|-----|--------------------|---------------------------|
+| [gap] | [Expert 1, Expert 3] | Yes / No / Partial |
+
+Rules:
+- List gaps in order of consensus - most experts flagging
+  first
+- Only include gaps flagged by at least two experts, OR
+  single-expert gaps that are critical to shortlisting for
+  this specific role
+- "Fixable" means resolvable using sources/ or facts already
+  confirmed in chat - no new content needed
+
+------------------------------
+2. INDIVIDUAL EXPERT REVIEWS
+------------------------------
+Each expert section must follow this structure:
+  - Strengths: what is already well represented (max 3 points)
+  - Gaps: specific missing content with suggested rewrites,
+    each referencing an actual line from the resume
+  - Overall verdict: Ready / Needs Minor Work / Needs
+    Significant Work
+
+All gap feedback must reference actual resume lines. No generic
+advice. Calibrate every finding to the target role and posting.
+Be direct - do not soften feedback.
+
+------------------------------
+EXPERT 1: The Hiring Manager
+------------------------------
+Persona: the person this role reports to. Has a problem to
+solve and limited time to find someone who can solve it.
+
+Evaluate:
+1. From page 1 alone, can I tell this person has done the
+   core of this job before?
+2. Which of my must-haves are proven by a bullet, and which
+   are only claimed in the summary or competencies?
+3. Is the scale right - size of site, budget, customer base,
+   team - or is it left vague?
+4. Is there evidence of owning an outcome, not just taking
+   part in one?
+5. What would I ask about first in an interview, and does the
+   Resume set up a good answer?
+6. What is the single biggest reason I would pass on this resume?
+
+------------------------------
+EXPERT 2: The Recruiter
+------------------------------
+Persona: senior recruiter in this field, screens a very large
+number of resumes a week, decides in seconds.
+
+Evaluate:
+1. Do the titles, headers and first lines match what I would
+   search for?
+2. Is the level obvious in the top third of page 1?
+3. Red flags: gaps, short tenures, unclear moves, titles that
+   do not match the work described.
+4. Are the posting's must-have terms present where they are
+   true - and absent where they are not?
+5. Is anything that would get this resume shortlisted buried on
+   the last page?
+6. Length, layout, consistency: anything that makes this
+   harder to read than the next resume in the pile?
+
+------------------------------
+EXPERT 3: The Practitioner
+------------------------------
+Persona: someone who does this exact job today, very good at
+it, and allergic to vague claims. Derive their background from
+the posting.
+
+Evaluate:
+1. Are methods, tools, systems and standards named with
+   context, or listed as buzzwords?
+2. Which bullets would a practitioner read as vague,
+   unsubstantiated, or lacking depth?
+3. Does the wording sound like someone who did the work, or
+   someone describing it from outside?
+4. Is there a claim here I would not believe without an
+   example? Quote it.
+5. What hands-on proof is missing that this role expects?
+
+------------------------------
+EXPERT 4: The Sceptical Editor
+------------------------------
+Persona: an editor who has read thousands of resumes and can tell
+in one paragraph when text was machine-written or copied from
+the posting.
+
+Evaluate:
+1. Which lines read as generated: uniform bullet length,
+   repeated three-item lists, inflated verbs?
+2. Which lines mirror the posting's wording too closely?
+3. Where is a specific noun missing - a named system, a
+   place, a constraint - that would make the line believable?
+4. Is any sentence doing no work? Quote it and cut it.
+5. Does the summary say who this person is, or only list
+   what they have touched?
+
+------------------------------
+JOB-SPECIFIC EXPERT TEMPLATE
+------------------------------
+For each additional expert confirmed in panel selection,
+use this structure. Calibrate entirely to the target role
+and posting - do not reuse generic questions.
+
+  Persona: [Expert title and background tailored to the role]
+  Lens: [The specific aspect of the role this expert evaluates]
+  Evaluate: [5-8 questions derived directly from the posting
+  and the context of this field]
+  Flag every gap with: what is missing, why it matters for
+  this specific role, and a suggested addition or rewrite
+  referencing an actual resume line.
+
+------------------------------
+3. FIX LOOP
+------------------------------
+Run after all expert reviews are complete.
+
+STEP 1 - CLASSIFY
+Classify every finding from every expert as either:
+  - Fixable: resolvable using sources/ or facts already
+    confirmed in chat. No new content needed.
+  - Unfixable: requires new content, experience, or
+    information not yet provided.
+
+STEP 2 - PROPOSE THE FIXABLE ITEMS
+Present every Fixable finding as one numbered list:
+  [n] Original: "..."
+      Proposed: "..."
+      Addresses: [which expert finding]
+      Source: [where in sources/ the proposed wording traces to]
+Before showing the list, check every Proposed line against the
+rules files: a summary stays 2-3 sentences, a bullet stays within
+2 lines, a competency stays within 20 words, and the competencies
+block keeps one communication or working-style line. A fix that
+breaks a rule is rewritten until it does not. If a fix reverses
+something /review changed earlier, say so: reviewers disagree,
+and the candidate decides.
+
+Then ask once: "Apply all, apply some (give me the numbers),
+or none?" Wait for the answer. Apply only what was approved.
+This keeps the "propose before applying" rule in CLAUDE.md.
+
+STEP 3 - AUDIT TRAIL
+After the approved fixes are applied, present a complete audit
+trail and save it to jobs/<slug>/panel_fixes.md:
+  - What was changed
+  - What it was changed to
+  - Which expert finding it addressed
+  - What was proposed and declined
+
+STEP 4 - UNFIXABLE GAPS
+Present all Unfixable findings in a clearly labelled section:
+"Gaps requiring your input."
+For each gap note:
+  - What is missing
+  - Why it matters for this specific role
+  - Whether the candidate might have real experience elsewhere
+    that covers it
+Never fill an Unfixable gap with invented content. If the
+candidate supplies a real fact, record it in
+sources/bullet_bank.md first, then use it.
+
+STEP 5 - REBUILD
+Run /build for this job so the Word file and the preview match
+the fixed content.

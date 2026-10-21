@@ -1,0 +1,176 @@
+=== Resume_Rules_Validation.txt ===
+INSTRUCTIONS ONLY - do not use this file as a content source.
+
+This file governs all validation checks run during the Tailor
+workflow (step 9) and the Review trigger. Follow precisely.
+
+------------------------------
+VALIDATION CHECKLIST
+Run all checks in sequence. Do not ask for input between checks.
+Present a single consolidated report at the end.
+------------------------------
+
+CHECK 0 - TRACEABILITY
+For every employer, title, date, credential and number in
+content.json, confirm it appears in sources/ or was confirmed
+in chat and recorded in sources/bullet_bank.md. List anything
+that does not trace. An untraceable fact is removed or marked
+NEED CONFIRMATION - it is never left in.
+
+CHECK 1 - BULLET LENGTH
+Scan every bullet across all roles. Flag any bullet that would
+render longer than 2 lines in the Word file.
+For each flagged bullet:
+- Propose a tightened version if meaning is preserved, OR
+- Propose a split into two standalone bullets if tightening
+  loses meaning.
+Apply proposed fixes and note them in the report.
+
+CHECK 2 - ROLE DESCRIPTIONS
+Scan every role description paragraph. Flag any that:
+- Exceed 3 sentences
+- Restate or preview what the bullets already say
+- Lead with headcount or team size as the opening statement
+For each flagged description, propose a rewrite that sets
+context, states the mandate, and signals impact - without
+duplicating the bullets. Apply proposed fixes and note them.
+
+CHECK 3 - COMPETENCIES FORMAT AND DENSITY
+Confirm:
+- Every competency description uses keyword-list format
+  (noun phrases, no sentences, no verbs) except the
+  communication/style competency which may use sentence form
+- No description exceeds 20 words
+- The full block does not exceed half a page
+- There are 8-10 competencies maximum
+If any check fails, apply the minimum fix needed and note it.
+
+CHECK 4 - NATURALNESS TEST
+Read the full resume as a flowing document. Flag any section -
+summary, competencies, role description, or bullet - where
+the language:
+- Feels like a keyword dump rather than professional narrative
+- Reads as posting-mirroring (copied or paraphrased from the
+  posting rather than from real experience)
+- Uses padded or unnatural phrasing
+For each flagged section, propose a plain-language rewrite
+that retains the meaning. Do not rewrite sections that read
+naturally - only flag genuine problems.
+
+CHECK 5 - PAGE COUNT AND COMPRESSION
+Estimate whether the full resume including Education fits within
+the page target in config.json. If it fits, proceed. If it
+does not, run the following passes in order, stopping when the
+Resume fits. Log every action in the Page Compression Log.
+
+PASS 1 - LANGUAGE CONCISENESS
+Tighten wordy phrasing across all sections without changing
+meaning or removing content. Target: "in order to",
+"responsible for ensuring", "as well as", "a wide range of",
+"across a variety of". Replace with tighter equivalents.
+Note what was tightened. If now within target, stop.
+
+PASS 2 - FORMATTING COMPRESSION
+If still over target, note that compression mode is active
+and build with --compress. That tightens the spacing around
+role descriptions, bullets, the "Key Contributions:" label and
+job titles. It never touches section headers, employer lines,
+or font size. If now within target, stop.
+
+PASS 3 - CONTENT REDUNDANCY
+If still over target, scan for:
+- Bullets making the same point across two roles - remove
+  the weaker or older instance
+- Bullets in roles older than 10 years not mapping to a
+  must-have or nice-to-have in the posting - remove
+- Competency descriptions that restate what the title already
+  conveys - tighten to 8-10 words or remove the description
+Log every removal: what was removed, which role, and why
+(redundant / low relevance / older role). Include a
+restoration note so removed content can be reinstated.
+
+PAGE COMPRESSION LOG - always include after Build:
+- Which passes were needed
+- What was changed in each pass
+- Whether compression mode is active
+- Any content removed in Pass 3 with restoration option
+
+------------------------------
+KEYWORD RULES
+------------------------------
+- Keywords must be supported by real experience in the bullets.
+  Never insert a keyword without a backing bullet or confirmed
+  fact.
+- If a posting keyword has no supporting experience, flag it in
+  the Gap Report - do not force it in.
+- The keyword score card is an estimate for the candidate's own
+  use. Nobody outside an employer knows how that employer's
+  software scores a resume. A naturally written resume with a lower
+  estimate is preferable to a keyword-stuffed resume with a higher
+  one.
+
+------------------------------
+PHASE 1 - RESUME WRITER REVIEW CRITERIA
+(used by Review trigger)
+------------------------------
+Evaluate as a senior resume writer:
+- Impact: quantified where a metric genuinely exists and adds
+  meaning. Do not flag missing numbers where the bullet is
+  already strong without one.
+- Language: strong action verbs, no "responsible for" or
+  "helped with"
+- Relevance: every bullet earning its space, no filler
+- Authenticity: genuine career story, not posting-mirrored
+  language
+- Naturalness: flows as a professional narrative, not a keyword
+  inventory
+- Role descriptions: context-mandate-impact in 2-3 sentences,
+  not a bullet preview
+- Competencies format: keyword-list style confirmed
+- Clarity: career narrative is clear
+- Consistency: tense, formatting, punctuation
+- Bullet length: all within 2 lines
+- Competencies density: within half a page, descriptions within
+  20 words
+- Pages: within the page target, Education included. For roles
+  older than 10 years, recommend condensing to 2-3 bullets
+  unless they directly match the target role.
+
+For each issue: show original line and suggested rewrite.
+Rate overall: Needs Work / Good / Strong / Excellent.
+
+------------------------------
+PHASE 2 - RECRUITER REVIEW QUESTIONS
+(used by Review trigger - answer all 12 explicitly)
+------------------------------
+1. Does this resume pass the 6-second scan? What stands out first
+   - and is it the right thing?
+2. Are titles and section headers what a recruiter searches
+   for? Flag terms that won't match common filters.
+3. Is the level signal strong in the first half? A recruiter
+   often decides before scrolling.
+4. Are there red flags - gaps, short tenures, unclear
+   transitions?
+5. For the specific target role, what is missing or
+   underemphasised?
+6. Does the resume feel authentic or does it read as
+   posting-mirroring? Flag sections that feel templated or
+   word-for-word aligned with typical postings.
+7. Naturalness test: does it read as a polished narrative or
+   a keyword inventory? Flag where a recruiter would pause.
+8. Is it instantly readable as the level the posting is hiring
+   for? Can a recruiter see scope, ownership and the strongest
+   result without reading a bullet?
+9. Does it answer the hiring manager's three questions within
+   10 seconds: Can this person do this job? Have they done it
+   before at this scale? Will they make my life easier?
+10. Are the right keywords in the right places - summary,
+    titles, competencies - not just buried in bullets?
+11. Are the genuine differentiators visible and prominent, or
+    buried on the last page?
+12. Does everything that matters appear above the fold? If a
+    recruiter stops at page 1, have they seen enough to
+    shortlist?
+
+Give hiring likelihood: Unlikely / Maybe / Strong Candidate /
+Top of Stack.
